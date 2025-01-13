@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>POODLE</h1>
+        <nav>
+            <ul>
+                <li><a href="#poodle">POODLE</a></li>
+                <li><a href="#Prevention">Prevention</a></li>
+                <li><a href="#POODLE attack against TLS">POODLE attack against TLS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 id="poodle">poodle</h2>
+        <article>
+            <p>POODLE (which stands for "Padding Oracle On Downgraded Legacy Encryption") is a security vulnerability
+                which
+                takes advantage of the fallback to SSL 3.0.[1][2][3] If attackers successfully exploit this
+                vulnerability,
+                on average, they only need to make 256 SSL 3.0 requests to reveal one byte of encrypted messages. Bodo
+                Möller, Thai Duong and Krzysztof Kotowicz from the Google Security Team discovered this vulnerability;
+                they
+                disclosed the vulnerability publicly on October 14, 2014 (despite the paper being dated "September
+                2014"[1]).[4] On December 8, 2014, a variation of the POODLE vulnerability that affected TLS was
+                announced.[5]
+
+                The CVE-ID associated with the original POODLE attack is CVE-2014-3566. F5 Networks filed for
+                CVE-2014-8730
+                as well, see POODLE attack against TLS section below.</p>
+            <img src="https://fishsubsidy.org/wp-content/uploads/2020/01/Toy-Poodle.jpg" width="300">
+        </article>
+        <article id="Prevention">
+            <h2>Prevention</h2>
+            <p>To mitigate the POODLE attack, one approach is to completely disable SSL 3.0 on the client side and the
+                server side. However, some old clients and servers do not support TLS 1.0 and above. Thus, the authors
+                of the paper on POODLE attacks also encourage browser and server implementation of TLS_FALLBACK_SCSV,[6]
+                which will make downgrade attacks impossible.[1][7]
+
+                Another mitigation is to implement "anti-POODLE record splitting". It splits the records into several
+                parts and ensures none of them can be attacked. However the problem of the splitting is that, though
+                valid according to the specification, it may also cause compatibility issues due to problems in
+                server-side implementations.[8]
+
+                A full list of browser versions and levels of vulnerability to different attacks (including POODLE) can
+                be found in the article Transport Layer Security.
+
+                Opera 25 implemented this mitigation in addition to TLS_FALLBACK_SCSV.[9]
+
+                Google's Chrome browser and their servers had already supported TLS_FALLBACK_SCSV. Google stated in
+                October 2014 it was planning to remove SSL 3.0 support from their products completely within a few
+                months.[7] Fallback to SSL 3.0 has been disabled in Chrome 39, released in November 2014.[10] SSL 3.0
+                has been disabled by default in Chrome 40, released in January 2015.[11]
+
+                Mozilla disabled SSL 3.0 in Firefox 34 and ESR 31.3, which were released in December 2014, and added
+                support of TLS_FALLBACK_SCSV in Firefox 35.[12]
+
+                Microsoft published a security advisory to explain how to disable SSL 3.0 in Internet Explorer and
+                Windows OS,[13] and on October 29, 2014, Microsoft released a fix which disables SSL 3.0 in Internet
+                Explorer on Windows Vista / Server 2003 and above and announced a plan to disable SSL 3.0 by default in
+                their products and services within a few months.[14] Microsoft disabled fallback to SSL 3.0 in Internet
+                Explorer 11 for Protect Mode sites on February 10, 2015,[15] and for other sites on April 14, 2015.[16]
+
+                Apple's Safari (on OS X 10.8, iOS 8.1 and later) mitigated against POODLE by removing support for all
+                CBC protocols in SSL 3.0,[17][18] however, this left RC4 which is also completely broken by the RC4
+                attacks in SSL 3.0.[citation needed] POODLE was completely mitigated in OS X 10.11 (El Capitan 2015) and
+                iOS 9 (2015).
+
+                To prevent the POODLE attack, some web services dropped support of SSL 3.0. Examples include
+                CloudFlare[19] and Wikimedia.[20]
+
+                Network Security Services version 3.17.1 (released on October 3, 2014) and 3.16.2.3 (released on October
+                27, 2014) introduced support for TLS_FALLBACK_SCSV,[21][22] and NSS will disable SSL 3.0 by default in
+                April 2015.[23][needs update] OpenSSL versions 1.0.1j, 1.0.0o and 0.9.8zc, released on October 15, 2014,
+                introduced support for TLS_FALLBACK_SCSV.[24] LibreSSL version 2.1.1, released on October 16, 2014,
+                disabled SSL 3.0 by default.[25]</p>
+        </article>
+    </main>
+</body>
+</html>

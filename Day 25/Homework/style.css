@@ -1,0 +1,32 @@
+body {
+    background: rebeccapurple;
+}
+
+a {
+    color: rgb(183, 255, 1);
+}
+
+article {
+    background: yellowgreen;
+}
+
+section {
+    background: hotpink;
+}
+
+.img5 {
+    border-radius: 50%;
+}
+
+table {
+   border-color: brown;
+   border-style: inset;
+}
+
+h1 {
+    color: rgb(9, 255, 1);
+}
+
+ul {
+    color: rgb(0, 208, 255);
+}

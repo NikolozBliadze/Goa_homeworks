@@ -1,0 +1,24 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./assets/photos/body-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box {
+    background-image: url("./assets/photos/SG-girl.png");
+    background-size: cover;
+    background-position: -50px 0px;
+    background-repeat: no-repeat;
+    border: 5xp solid red;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 10px 10px;
+}
+
