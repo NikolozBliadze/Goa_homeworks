@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .pricing-table {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .pricing-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            width: 250px;
+        }
+
+        .pricing-card h2 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .pricing-card .price {
+            font-size: 36px;
+            color: #4CAF50;
+            margin: 20px 0;
+        }
+
+        .pricing-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .pricing-card ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .pricing-card ul li:last-child {
+            border-bottom: none;
+        }
+
+        .pricing-card button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .pricing-card button:hover {
+            background-color: #45a049;
+        }
+
+        .pricing-card.basic {
+            background-color: #e3f2fd;
+        }
+
+        .pricing-card.standard {
+            background-color: #fff3e0;
+        }
+
+        .pricing-card.premium {
+            background-color: #fce4ec;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="pricing-table">
+        <div class="pricing-card basic">
+            <h2>Basic</h2>
+            <div class="price">$25</div>
+            <ul>
+                <li>10 GB Space</li>
+                <li>3 Domain Names</li>
+                <li>20 Email Address</li>
+                <li>Live Support</li>
+            </ul>
+            <button>Order Now</button>
+        </div>
+
+        <div class="pricing-card standard">
+            <h2>Standard</h2>
+            <div class="price">$50</div>
+            <ul>
+                <li>50 GB Space</li>
+                <li>5 Domain Names</li>
+                <li>Unlimited Email Address</li>
+                <li>Live Support</li>
+            </ul>
+            <button>Order Now</button>
+        </div>
+
+        <div class="pricing-card premium">
+            <h2>Premium</h2>
+            <div class="price">$100</div>
+            <ul>
+                <li>Unlimited GB Space</li>
+                <li>30 Domain Names</li>
+                <li>Unlimited Email Address</li>
+                <li>Live Support</li>
+            </ul>
+            <button>Order Now</button>
+        </div>
+    </div>
+
+</body>
+</html>

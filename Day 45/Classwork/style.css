@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;  
+}
+  
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.box {
+    background-color: #a4f1f8;
+    padding: 20px; 
+    text-align: center; 
+    border: 1px solid #000;
+}

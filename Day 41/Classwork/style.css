@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 20px;
+    background: rgb(100, 212, 102);
+    font-family: sans-serif;
+}
+
+
+.a:link{
+    color: aquamarine;
+}
+
+.b:visited{
+    color: lightcyan;
+}
+
+.c:active{
+    color: limegreen;
+}
+
+.d:hover{
+    color: salmon;
+    background-color: aquamarine;
+}
+
+a{
+    text-decoration: wavy;
+}
+
+
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+    text-align: center;
+    background-color: rgb(255, 255, 255); 
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid rgb(139, 0, 139);
+}
+
+th:first-child {
+    background-color: rgb(139, 0, 139); 
+    color: rgb(255, 255, 255); 
+}
+th:nth-child(2) {
+    background-color: rgb(139, 0, 139);
+    color: rgb(255, 255, 255); 
+}
+
+th:nth-child(3) {
+    background-color: rgb(139, 0, 139); 
+    color: rgb(255, 255, 255); 
+}
