@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+.text-orange{
+    color:  hsl(25, 97%, 53%);
+}
+.text-white{
+    color:  hsl(0, 0%, 100%);
+}
+.text-light-gray{
+    color:  hsl(217, 12%, 63%);
+}
+.text-dark-blue{
+    color:  hsl(213, 19%, 18%);
+}
+.text-very-dark-blue{
+    color:  hsl(216, 12%, 8%);
+}
+
+.bg-white{
+    background:  hsl(0, 0%, 100%);
+}
+.bg-orange{
+    background:  hsl(25, 97%, 53%);
+}
+.bg-gray{
+    background:  hsl(217, 12%, 63%);
+}
+.bg-dark-blue{
+    background:  hsl(213, 19%, 18%);
+}
+.bg-gray-blue-100{
+    background: hsl(215, 18%, 19%);   
+}
+.bg-dark-blue{
+    background:  hsl(216, 12%, 8%);
+}
+
+.bg-linear{
+    background: linear-gradient(hsl(213, 19%, 18%), hsl(213, 19%, 11%));
+}
+
+
+.font-primary{
+    font-family: "Overpass", sans-serif;
+}
+
+
+.font-thick{
+    font-weight: 400;
+}
+.font-bold{
+    font-weight: 700;
+}
+
+
+.line-height-primary{
+    line-height: 25px;
+}
+
+.spacing-primary{
+    letter-spacing: 2px;
+}
+
+
+.h-screen{
+    height: 100vh;
+}
+
+.w-p{
+    max-width: 380px;
+}
+
+.size-primary{
+    width: 55px;
+    height: 55px;
+}
+.size-secondary{
+    width: 50px;
+    height: 50px;
+}
+.size-secondary-100{
+    width: 40px;
+    height: 40px;
+}
+
+.rounded-full{
+    border-radius: 100%;
+}
+.rounded-50{
+    border-radius: 50%;
+}
+.rounded-20{
+    border-radius: 20px;
+}
+
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.item-center{
+    align-items: center;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.p-20{
+    padding: 20px;
+}
+.p-10{
+    padding: 10px;
+}
+.p-15{
+    padding: 15px;
+}
+
+.py-10{
+    padding: 10px 0;
+    margin-top: -5px;
+}
+
+.px-15{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.pt-14{
+    padding-top: 14px;
+}
+
+.mr-auto {
+    margin-right: auto;
+}
+.gap-10{
+    gap: 20px;
+}
+
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.text-primary{
+    font-size: 24px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+.bg-hover:hover{
+    background: hsl(0, 0%, 100%);
+    color: hsl(216, 12%, 8%);
+}
+
+
+.cursor-pointer{
+    cursor: pointer;
+}
